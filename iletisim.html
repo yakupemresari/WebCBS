@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Yakup Emre SARI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Yakup Emre SARI</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Hakkımda</a></li>
+            <li><a href="hobilerim.html">Hobilerim</a></li>
+            <li><a href="iletisim.html" class="active">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main class="container fade-in">
+        <section id="iletisim" class="content-section">
+            <h1 class="slide-down">İletişim</h1>
+            <div class="contact-grid slide-up">
+                <!-- Sol Taraf: İletişim Bilgileri -->
+                <div class="contact-info">
+                    <h2>Bana Ulaşın</h2>
+                    <p>Projeler, işbirlikleri veya sadece merhaba demek için dilediğiniz zaman ulaşabilirsiniz.</p>
+
+                    <div class="info-item" style="flex-wrap: wrap;">
+                        <div style="display: flex; gap: 1.2rem; width: 100%; margin-bottom: 1rem;">
+                            <div class="icon">📍</div>
+                            <div>
+                                <h3>Konum</h3>
+                                <p>Ankara, Türkiye</p>
+                            </div>
+                        </div>
+                        <div id="contact-map"
+                            style="width: 100%; height: 200px; border-radius: 12px; z-index: 1; border: 1px solid rgba(255,255,255,0.1);">
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <h3>E-posta</h3>
+                            <p>yakupemresari@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="icon">🔗</div>
+                        <div>
+                            <h3>Sosyal Medya</h3>
+                            <div class="social-links">                              
+                                <a href="https://github.com/yakupemresari/WebCBS" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ Taraf: İletişim Formu -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız</label>
+                            <input type="text" id="name" name="name" required placeholder="Adınız...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz</label>
+                            <input type="email" id="email" name="email" required placeholder="ornek@mail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="4" required
+                                placeholder="Mesajınızı buraya yazın..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="contact-map.js"></script>
+</body>
+
+</html>

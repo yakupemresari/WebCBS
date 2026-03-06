@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobilerim - Yakup Emre SARI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Yakup Emre SARI</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Hakkımda</a></li>
+            <li><a href="hobilerim.html" class="active">Hobilerim</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main class="container fade-in">
+        <section id="hobilerim" class="content-section">
+            <h1 class="slide-down">Hobilerim</h1>
+            <div class="profile-card slide-up">
+                <p>Seyahat etmeyi ve yeni yerler keşfetmeyi çok seviyorum. Aşağıdaki interaktif haritada, şimdiye kadar
+                    gittiğim ve gelecekte gitmeyi planladığım bazı yerleri görebilirsiniz:</p>
+                <div id="map" class="travel-map"></div>
+            </div>
+        </section>
+    </main>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
